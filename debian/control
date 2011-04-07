@@ -7,7 +7,7 @@ Standards-Version: 3.7.2
 
 Package: ldap2dns
 Architecture: any
-Depends: ${shlibs:Depends}, bind | bind9 | djbdns | djbdns-installer
+Depends: ${shlibs:Depends}, bind | bind9 | djbdns | dbndns
 Recommends: ldap-utils (>= 2.1.22-1)
 Description: LDAP based DNS management system
  ldap2dns is a program to create DNS (Domain Name Service) records directly
