@@ -1,7 +1,7 @@
 Source: ldap2dns
 Section: admin
 Priority: optional
-Maintainer: Igor Stroh <jenner@debian.org>
+Maintainer: Will Daniels <mail@willdaniels.co.uk>
 Build-Depends: debhelper (>= 4.1.16), libldap2-dev (>= 2.1.22-1), links (>=0.98-3)
 Standards-Version: 3.7.2
 
