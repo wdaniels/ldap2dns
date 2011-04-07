@@ -1,0 +1,27 @@
+Description: Defer to dh_installman in rules for placement of man pages
+ Prefer to let dh_installman decide where to put the upstream man
+ page so instead of messing with MANDIR path we can just list it in
+ debian/manpages.
+ .
+ Maybe there is a cleaner way to handle this than patching the Makefile.
+--- a/Makefile
++++ b/Makefile
+@@ -49,14 +49,16 @@ ldap2dns.o-dbg: ldap2dns.c
+ install: all
+ 	mkdir -p $(INSTALL_PREFIX)/$(PREFIXDIR)/bin
+ 	mkdir -p $(INSTALL_PREFIX)/$(LDAPCONFDIR)/schema
+-	mkdir -p $(INSTALL_PREFIX)/$(MANDIR)/man1
++# Debian Maintainer: Let dh_installman handle this
++#	mkdir -p $(INSTALL_PREFIX)/$(MANDIR)/man1
+ 	install -s -m 755 ldap2dns $(INSTALL_PREFIX)/$(PREFIXDIR)/bin/
+ # Debain Maintainer: Use symbolic link file in build target instead
+ #	ln -f $(INSTALL_PREFIX)/$(PREFIXDIR)/bin/ldap2dns \
+ #		$(INSTALL_PREFIX)/$(PREFIXDIR)/bin/ldap2dnsd
+ 	install -m 755 ldap2tinydns-conf $(INSTALL_PREFIX)/$(PREFIXDIR)/bin/
+ 	install -m 644 ldap2dns.schema $(INSTALL_PREFIX)/$(LDAPCONFDIR)/schema/
+-	install -m 644 ldap2dns.1 $(INSTALL_PREFIX)/$(MANDIR)/man1
++# Debian Maintainer: Let dh_installman handle this
++#	install -m 644 ldap2dns.1 $(INSTALL_PREFIX)/$(MANDIR)/man1
+ 
+ clean:
+ 	rm -f *.o *.o-dbg ldap2dns ldap2dns-dbg ldap2dnsd data* *.db core \

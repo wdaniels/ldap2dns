@@ -1,2 +1,3 @@
 makefile-bin-links
+makefile-let-debhelper-install-manpages
 ldap2dns-debian-config-path
