@@ -1,0 +1,15 @@
+Description: Fix hard-coded define for LDAP config path
+ Changes LDAP_CONF to /etc/ldap/ldap.conf for Debain.
+ .
+ Need to create a proper patch for this to submit upstream.
+--- a/ldap2dns.c
++++ b/ldap2dns.c
+@@ -18,7 +18,7 @@
+ #include <sys/types.h>
+ 
+ #define UPDATE_INTERVAL 59
+-#define LDAP_CONF "/etc/ldap.conf"
++#define LDAP_CONF "/etc/ldap/ldap.conf"
+ #define OUTPUT_DATA 1
+ #define OUTPUT_DB 2
+ #define MAXHOSTS 10
