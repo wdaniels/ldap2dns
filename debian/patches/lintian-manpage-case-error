@@ -1,0 +1,15 @@
+Description: Case error in upstream man page causes lintian warning
+ Trivial error in man page uses undefined macro .b clearly intended as .B
+ .
+ Patch not yet forwarded upstream.
+--- a/ldap2dns.1
++++ b/ldap2dns.1
+@@ -141,7 +141,7 @@ options.  They are listed here for conve
+ 
+ /etc/openldap/ldap.conf
+ .br
+-.b ldap2dns
++.B ldap2dns
+ will read the options
+ HOST, PORT, URI, BINDDN, and BINDPW from ldap.conf.  Their purpose and
+ definition is the same as documented above and in the OpenLDAP package.
