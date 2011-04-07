@@ -1,0 +1,8 @@
+ldap2dns for Debian
+-------------------
+
+Please note that this version of ldap2dns is compiled and configured for use
+with OpenLDAP 2.1. Have a look at the project homepage for more info on
+customizing. http://ldap2dns.tiscover.com/
+
+ -- Johann Botha <joe@debian.org>, Mon, 08 March 2004 23:08:26 +0200

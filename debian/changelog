@@ -1,0 +1,82 @@
+ldap2dns (0.4.1-0.1) unstable; urgency=low
+
+  * Non-maintainer upload (Fixes: Bug#300008, Bug#333448)
+  * New upstream release (Fixes: Bug#375468, Bug#410888)
+
+ -- Bjoern Boschman <bjoern@boschman.de>  Thu, 21 Jun 2007 22:02:38 +0200
+
+ldap2dns (0.3.1-3) unstable; urgency=low
+
+  * New maintainer (Closes: #248520)
+  * debian/rules: replaced DH_COMPAT by debian/compat
+  * debian/control: increased Standards-Version to 3.6.1
+
+ -- Igor Stroh <jenner@debian.org>  Thu, 23 Jun 2005 13:40:15 +0200
+
+ldap2dns (0.3.1-2) unstable; urgency=low
+
+  * Package orphaned.
+
+ -- Johann Botha <joe@debian.org>  Tue, 11 May 2004 21:21:13 +0200
+
+ldap2dns (0.3.1-1) unstable; urgency=low
+
+  * New Upstream version.
+  * Compiled for OpenLDAP 2.1. (Closes: Bug#214192)
+  * Added bind9 to Depends list (Closes: Bug#186274, Bug#131599)
+
+ -- Johann Botha <joe@debian.org>  Mon,  8 Mar 2004 23:11:41 +0200
+
+ldap2dns (0.2.6-1) unstable; urgency=low
+
+  * First version uploaded as official Debian package.  Closes: #118141
+  * New Upstream version.
+  * ldap2tinydns-conf uid/gid fixes
+
+ -- Johann Botha <joe@debian.org>  Sun, 19 Aug 2001 16:05:46 +0200
+
+ldap2dns (0.2.4-6) unstable; urgency=low
+
+  * minor uid.gid fixes
+  * /env/LDAPPW fix for ps visible password
+
+ -- Johann Botha <joe@blio.net>  Tue, 31 Jul 2001 17:20:23 +0200
+
+ldap2dns (0.2.4-5) unstable; urgency=low
+
+  * fixed user/group in ldap2tinydns-conf
+  * fixed DNSipaddr syntax in dns.schema
+
+ -- Johann Botha <joe@blio.net>  Mon,  9 Jul 2001 19:26:32 +0200
+
+ldap2dns (0.2.4-4) unstable; urgency=low
+
+  * Added Text version of README.html
+  * Minor Debian rules and dependency fix
+
+ -- Johann Botha <joe@blio.net>  Sun,  1 Jul 2001 13:49:46 +0200
+
+ldap2dns (0.2.4-3) unstable; urgency=low
+
+  * Minor Fixes to conform to Debian standards
+
+ -- Johann Botha <joe@blio.net>  Wed, 20 Jun 2001 23:56:12 +0200
+
+ldap2dns (0.2.4-2) unstable; urgency=low
+
+  * fixed Build-Depends
+  * Added ldap2tinydns-conf.1 manpage
+
+ -- Johann Botha <joe@blio.net>  Thu,  7 Jun 2001 17:54:43 +0200
+
+ldap2dns (0.2.4-1) unstable; urgency=low
+
+  * Initial Release.
+  * Debianized Makefile
+  * Added "description" attribute to DNSzone in dns.schema
+  * Removed OpenLDAPv1 schema info: dns.at.conf, dns.oc.conf
+  * Removed import.pl, example*.html, Specfile
+  * Added ldap2dns.1 and ldap2dnsd.1 manpages
+
+ -- Johann Botha <joe@blio.net>  Tue, 22 May 2001 20:43:11 +0200
+

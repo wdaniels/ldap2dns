@@ -1,0 +1,22 @@
+Source: ldap2dns
+Section: admin
+Priority: optional
+Maintainer: Igor Stroh <jenner@debian.org>
+Build-Depends: debhelper (>= 4.1.16), libldap2-dev (>= 2.1.22-1), links (>=0.98-3)
+Standards-Version: 3.7.2
+
+Package: ldap2dns
+Architecture: any
+Depends: ${shlibs:Depends}, bind | bind9 | djbdns | djbdns-installer
+Recommends: ldap-utils (>= 2.1.22-1)
+Description: LDAP based DNS management system
+ ldap2dns is a program to create DNS (Domain Name Service) records directly
+ from an LDAP directory. It can and should be used to replace the secondary
+ name-server by a second primary one. ldap2dns reduces all kind of
+ administration overhead: No more flat file editing, no more zone file
+ editing. After having installed ldap2dns, the administrator only has to
+ access the LDAP directory.
+ .
+ ldap2dns is designed to write ASCII data files used by tinydns from the
+ djbdns package, but also may be used to write .db-files used by named as
+ found in the BIND package.
