@@ -2,6 +2,7 @@ Source: ldap2dns
 Section: admin
 Priority: optional
 Maintainer: Will Daniels <mail@willdaniels.co.uk>
+Uploaders: Bjoern Boschman <bjoern@boschman.de>
 Build-Depends: debhelper (>= 7), libldap2-dev (>= 2.1.22)
 Standards-Version: 3.9.2
 Homepage: http://github.com/bklang/ldap2dns
