@@ -1,12 +1,58 @@
-This package was ubuntized by Fraser Stuart (Obleak) <fraser@arkhostings.com> on
-Sun, 17 May 2009 15:30:00 +1000.
-Origanlly debianized by Johann Botha <joe@debian.org>
+This package was origanlly debianized by:
 
-It was downloaded from: http://projects.alkaloid.net/download.php?list.10
+    Johann Botha <joe@debian.org>
 
-Upstream Author: Jacob Rief <jacob.rief@tiscover.com>
+It was originally downloaded from:
 
-Copyright:
-You are free to use and distribute this software under the terms of
-the GNU General Public License. On Debian systems, the complete text of the
-GNU General Public License can be found in /usr/share/common-licenses/GPL
+    <http://projects.alkaloid.net/download.php?list.10>
+
+Latest release downloaded from:
+
+    <http://github.com/bklang/ldap2dns/archives/master>
+
+Upstream Authors:
+
+    Jacob Rief <jacob.rief@tiscover.com>
+    Ben Klang <ben@alkaloid.net>
+
+Copyright and Disclaimer:
+
+    [Verbatim from doc/README]
+
+    This program is Copyright 1999-2004 Jacob Rief and 2005-2006 Ben Klang
+    This program is licensed under the GPL version 2
+
+    ldap2dns was originally written by Jacob Rief (jacob.rief@tiscover.com).
+    It is now maintained by Ben Klang (bklang@alkaloid.net). If you run
+    ldap2dns on a production nameserver, please send the maintainer an email
+    and mention on what OS and with which nameserver you do so.
+
+    Disclaimer: The author and all contributors disclaim any kind of
+    warranty or liability or suitability for any purpose. By running this
+    software you agree that you are a competent systems administrator and
+    will bear the responsibility for your actions.
+
+License:
+
+    This package is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, version 2 dated June 1991.
+
+    This package is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this package; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+
+The Debian packaging is:
+
+    Copyright (C) 2011 Will Daniels <mail@willdaniels.co.uk>
+    Copyright (C) 2007 Bjoern Boschman <bjoern@boschman.de>
+    Copyright (C) 2005 Igor Stroh <jenner@debian.org>
+    Copyright (C) 2004 Johann Botha <joe@debian.org>
+
+    and is licensed under the GPL version 3,
+    see `/usr/share/common-licenses/GPL-3'.
