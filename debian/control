@@ -4,6 +4,9 @@ Priority: optional
 Maintainer: Will Daniels <mail@willdaniels.co.uk>
 Build-Depends: debhelper (>= 7), libldap2-dev (>= 2.1.22)
 Standards-Version: 3.9.2
+Homepage: http://github.com/bklang/ldap2dns
+Vcs-Browser: http://gitorious.org/debian-packaging-ldap2dns/debian-packaging-ldap2dns/trees/debian
+Vcs-Git: git://gitorious.org/debian-packaging-ldap2dns/debian-packaging-ldap2dns.git
 
 Package: ldap2dns
 Architecture: any
