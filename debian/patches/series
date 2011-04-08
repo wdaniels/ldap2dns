@@ -1,3 +1,4 @@
+upstream-orig-tar-vs-git-mismatch
 lintian-manpage-case-error
 makefile-bin-links
 makefile-let-debhelper-install-manpages
