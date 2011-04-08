@@ -1,0 +1,9 @@
+version=3
+
+# upstream does not currently tag releases, if they start to we can use:
+#
+# http://githubredir.debian.net/github/bklang/ldap2dns (.*).tar.gz
+#
+# ...until then this will work for 0.4.2 at least:
+
+http://github.com/bklang/ldap2dns/archives/master /downloads/bklang/ldap2dns/ldap2dns-(.*).tar.gz
