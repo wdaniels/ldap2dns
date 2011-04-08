@@ -1,4 +1,4 @@
-ldap2dns (0.4.2-1~wgd1) UNRELEASED; urgency=low
+ldap2dns (0.4.2-1~wgd1) natty; urgency=low
 
   * New upstream release (0.4.2).
   * Non-maintainer upload (seems orphaned).
