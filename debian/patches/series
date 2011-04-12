@@ -1,4 +1,3 @@
 lintian-manpage-case-error
-makefile-bin-links
-makefile-let-debhelper-install-manpages
 ldap2dns-debian-config-path
+dfsg-license-clarification

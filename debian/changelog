@@ -1,3 +1,11 @@
+ldap2dns (0.4.2-1~wgd2) natty; urgency=low
+
+  * Change to CDBS for packaging
+  * ldap2dns.xml: fix erroneous copyright for DFSG
+  * ldap2dns.ldif: include LDIF schema for dynamic config
+
+ -- Will Daniels <mail@willdaniels.co.uk>  Tue, 12 Apr 2011 07:54:39 +0100
+
 ldap2dns (0.4.2-1~wgd1) natty; urgency=low
 
   * New upstream release (0.4.2).

@@ -3,7 +3,7 @@ Section: admin
 Priority: optional
 Maintainer: Will Daniels <mail@willdaniels.co.uk>
 Uploaders: Bjoern Boschman <bjoern@boschman.de>
-Build-Depends: debhelper (>= 7), libldap2-dev (>= 2.1.22)
+Build-Depends: debhelper (>= 7), libldap2-dev (>= 2.1.22), cdbs
 Standards-Version: 3.9.2
 Homepage: http://github.com/bklang/ldap2dns
 Vcs-Browser: http://gitorious.org/debian-packaging-ldap2dns/debian-packaging-ldap2dns/trees/debian

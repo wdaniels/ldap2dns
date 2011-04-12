@@ -4,7 +4,7 @@ Description: Fix hard-coded define for LDAP config path
  Need to create a proper patch for this to submit upstream.
 --- a/ldap2dns.c
 +++ b/ldap2dns.c
-@@ -18,7 +18,7 @@
+@@ -34,7 +34,7 @@
  #include <sys/types.h>
  
  #define UPDATE_INTERVAL 59

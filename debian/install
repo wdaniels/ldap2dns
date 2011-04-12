@@ -1,0 +1,4 @@
+ldap2dns.schema etc/ldap/schema/
+debian/ldap2dns.ldif etc/ldap/schema/
+ldap2dns usr/bin
+ldap2tinydns-conf usr/bin
