@@ -1,41 +1,11 @@
-ldap2dns (0.4.2-1~wgd2) natty; urgency=low
+ldap2dns (0.4.2-1) UNRELEASED; urgency=low
 
-  * Change to CDBS for packaging
-  * ldap2dns.xml: fix erroneous copyright for DFSG
-  * ldap2dns.ldif: include LDIF schema for dynamic config
+  * Added LDIF schema for dynamic config
+  * Simplified, updated and improved packaging (Closes: #437301)
+  * Non-maintainer upload (Closes: #300008 #333448 #607025)
+  * New upstream release (Closes: #375468 #410888)
 
- -- Will Daniels <mail@willdaniels.co.uk>  Tue, 12 Apr 2011 07:54:39 +0100
-
-ldap2dns (0.4.2-1~wgd1) natty; urgency=low
-
-  * New upstream release (0.4.2).
-  * Non-maintainer upload (seems orphaned).
-  * debian/compat: bump debhelper version to 7
-  * debian/copyright: expanded and updated
-  * debian/rules: set path variables used in Makefile
-  * debian/rules: added get-orig-source target
-  * debian/watch: support uscan against upstream github
-  * debian/source/format: change to quilt patch system
-  * debian/patches/ldap2dns-debian-config-path
-  * debian/patches/makefile-bin-links: use symbolic links
-  * debian/patches/makefile-let-debhelper-install-manpages
-  * debian/patches/lintian-manpage-case-error: macro .b > .B
-  * debian/manpages: man pages listed here instead of rules
-  * debian/docs: added new plain text README from upstream
-  * debian/rules: forget using links to genereate plain text README
-  * debian/control: drop build-dep on links
-  * debian/control: replace build-dep djbdns-installer with dbndns
-  * debian/control: increased Standards-Version to 3.9.1
-  * debian/ldap2dns.1: deprecated in favour of new upstream man page
-
- -- Will Daniels <mail@willdaniels.co.uk>  Fri, 08 Apr 2011 02:46:50 +0100
-
-ldap2dns (0.4.1-0.1) unstable; urgency=low
-
-  * Non-maintainer upload (Fixes: Bug#300008, Bug#333448)
-  * New upstream release (Fixes: Bug#375468, Bug#410888)
-
- -- Bjoern Boschman <bjoern@boschman.de>  Thu, 21 Jun 2007 22:02:38 +0200
+ -- Will Daniels <mail@willdaniels.co.uk>  Tue, 12 Apr 2011 10:00:21 +0100
 
 ldap2dns (0.3.1-3) unstable; urgency=low
 
