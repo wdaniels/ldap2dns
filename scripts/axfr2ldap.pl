@@ -168,7 +168,7 @@ sub read_zone
 			$mesg = $ldap->add(dn=>"cn=$zonename,$BASEDN", attr=>list_attrs(\%attr));
 			die "Failed to add entry:", $zonename, "   ", $mesg->error if ($mesg->code);
 		} elsif ($rr->type eq "A") {
-			die "Invalid A record for ", $rr->name, "  " unless ($rr->string =~ /^([0-9a-zA-Z_.+-]+)\.\s+(\d+)\s+(\w+)\s+(\w+)\s+([0-9.]+)/);
+			die "Invalid A record for ", $rr->name, "  " unless ($rr->string =~ /^([*0-9a-zA-Z_.+-]+)\.\s+(\d+)\s+(\w+)\s+(\w+)\s+([0-9.]+)/);
 			die "Corrupt A record for ", $rr->name, "  " unless ($1 eq $rr->name && $2 eq $rr->ttl && $3 eq $rr->class && $4 eq $rr->type && $5 eq $rr->address);
 
 			next if $1 eq "localhost.$zonename";
