@@ -48,6 +48,9 @@ olcAttributeTypes: ( 1.3.6.1.4.1.7222.1.4.25 NAME 'dnssrvweight' EQUALITY
  integerMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 SINGLE-VALUE )
 olcAttributeTypes: ( 1.3.6.1.4.1.7222.1.4.26 NAME 'dnssrvport' EQUALITY in
  tegerMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 SINGLE-VALUE )
+olcAttributeTypes: ( 1.3.6.1.4.1.7222.1.4.27 NAME 'dnstxt' EQUALITY
+ caseIg noreMatch SUBSTR caseIgnoreSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
 olcObjectClasses: ( 1.3.6.1.4.1.7222.1.4.19 NAME 'dnszone' STRUCTURAL MUST 
  ( objectclass $ cn ) MAY ( dnszonename $ dnsserial $ dnsrefresh $ dnsretry $ 
  dnsexpire $ dnsminimum $ dnsadminmailbox $ dnszonemaster $ dnstype $ dnsclass
@@ -55,6 +58,6 @@ olcObjectClasses: ( 1.3.6.1.4.1.7222.1.4.19 NAME 'dnszone' STRUCTURAL MUST
 olcObjectClasses: ( 1.3.6.1.4.1.7222.1.4.20 NAME 'dnsrrset' SUP dnszone STR
  UCTURAL MUST ( objectclass $ cn ) MAY ( dnsdomainname $ dnsrr $ dnsclass $ dn
  stype $ dnsipaddr $ dnscipaddr $ dnscname $ dnspreference $ dnsttl $ dnstimes
- tamp $ owner $ dnssrvpriority $ dnssrvweight $ dnssrvport ) )
+ tamp $ owner $ dnssrvpriority $ dnssrvweight $ dnssrvport $ dnstxt ) )
 olcObjectClasses: ( 1.3.6.1.4.1.7222.1.4.24 NAME 'dnsloccodes' STRUCTURAL M
  UST ( objectclass $ dnslocation ) MAY ( dnsipaddr $ uid $ description ) )
