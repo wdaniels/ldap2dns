@@ -2,10 +2,12 @@ Description: Fix hard-coded define for LDAP config path
  Changes LDAP_CONF to /etc/ldap/ldap.conf for Debain.
  .
  Need to create a proper patch for this to submit upstream.
---- a/ldap2dns.c
-+++ b/ldap2dns.c
-@@ -34,7 +34,7 @@
- #include <sys/types.h>
+Index: ldap2dns/ldap2dns.c
+===================================================================
+--- ldap2dns.orig/ldap2dns.c	2011-12-07 03:59:18.066271063 +0000
++++ ldap2dns/ldap2dns.c	2011-12-07 04:08:44.883145211 +0000
+@@ -35,7 +35,7 @@
+ #include <arpa/inet.h>
  
  #define UPDATE_INTERVAL 59
 -#define LDAP_CONF "/etc/ldap.conf"
