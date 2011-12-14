@@ -1,2 +1,5 @@
 lintian-manpage-case-error
 ldap2dns-debian-config-path
+makefile-link-order
+makefile-bin-links
+makefile-let-debhelper-install-manpages

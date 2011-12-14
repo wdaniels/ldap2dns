@@ -1,0 +1,24 @@
+Description: Fix GCC Link Order For LDAP Libs
+ Upstream Makefile fails during link stage because -lldap -llber are not
+ added in the correct left-to-right order. Presumably some default behaviour
+ has changed recently?!
+Index: ldap2dns/Makefile
+===================================================================
+--- ldap2dns.orig/Makefile	2011-12-14 05:45:25.922850584 +0000
++++ ldap2dns/Makefile	2011-12-14 05:45:54.126496016 +0000
+@@ -32,13 +32,13 @@
+ debug: ldap2dns-dbg
+ 
+ ldap2dns: ldap2dns.o
+-	$(LD) $(LDFLAGS) $(LIBS) -o $@ $+
++	$(LD) $(LDFLAGS) $+ $(LIBS) -o $@
+ 
+ ldap2dnsd: ldap2dns
+ 	ln -f ldap2dns ldap2dnsd
+ 
+ ldap2dns-dbg: ldap2dns.o-dbg
+-	$(LD) $(LDFLAGS) $(LIBS) -o $@ $+
++	$(LD) $(LDFLAGS) $+ $(LIBS) -o $@
+ 
+ ldap2dns.o: ldap2dns.c
+ 	$(CC) $(CFLAGS) -DVERSION='"$(VERSION)"' -c $< -o $@
