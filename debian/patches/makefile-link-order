@@ -14,7 +14,7 @@ Index: ldap2dns/Makefile
 +	$(LD) $(LDFLAGS) $+ $(LIBS) -o $@
  
  ldap2dnsd: ldap2dns
- 	ln -f ldap2dns ldap2dnsd
+ 	ln -sf ldap2dns ldap2dnsd
  
  ldap2dns-dbg: ldap2dns.o-dbg
 -	$(LD) $(LDFLAGS) $(LIBS) -o $@ $+
